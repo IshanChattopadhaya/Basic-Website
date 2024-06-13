@@ -1,0 +1,15 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Supposed to be a dance website but will modify",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ishan Chattopadhaya",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3",
+    "pug": "^3.0.2"
+  }
+}
