@@ -1,0 +1,71 @@
+doctype html
+html
+    head
+        title This is title
+        style
+            include ../static/style.css
+    body
+        nav#navbar
+            ul
+                div#logo
+                    img(src="/static/logo1.jpg")
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/") Trending Anime]
+                li #[a(href="/") Contact Us]
+
+
+        section#introSection 
+            div Welcome to The Anime Page
+            div.small All about anime
+        
+        section#missionSection 
+            h3 Anime Hall of Fame
+            div.card
+              h3 Attack On Titan
+              div.cardbox 
+                div.cardimg
+                    img(src="/static/AOT1.jpg")
+
+                div.cardcontent 
+                    p Genre: Action,Adventure,
+                    p Thriller,
+                    p Supernatual,
+                    p Body Horror 
+            div.card
+              h3 Full Metal Alchemist
+              div.cardbox 
+                div.cardimg
+                    img(src="/static/FMBA.jpeg")
+
+                div.cardcontent 
+                    p Genre: Action,Thriller,
+                    p Supernatual, Suspense
+              
+            div.card
+              h3 Monster
+              div.cardbox 
+                div.cardimg
+                    img(src="/static/Monster.jpg")
+
+                div.cardcontent 
+                    p Genre: Action,Psychological Thriller,
+                    p Supernatual 
+
+
+        section#sponsorSection 
+            h3 Honourable Mentions
+            #sponsors
+                img(src='/static/logo.jpeg',alt="Sponsor Image", class="spImage")
+                img(src='/static/logo.jpeg',alt="Sponsor Image", class="spImage")
+                img(src='/static/logo.jpeg',alt="Sponsor Image", class="spImage")
+                img(src='/static/logo.jpeg',alt="Sponsor Image", class="spImage")
+                img(src='/static/logo.jpeg',alt="Sponsor Image", class="spImage")
+
+        section#footer
+            | If you watch anime, this is the site for you!
+            
+        script
+            include ../static/index.js
+    

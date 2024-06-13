@@ -1,0 +1,51 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+
+block content 
+    section#introSection 
+        div Welcome to The Anime Page
+        div.small All about anime
+
+    section#missionSection 
+        h3 Anime Hall of Fame
+        div.card
+          h3 Attack On Titan
+          div.cardbox 
+            div.cardimg
+                img(src="/static/AOT1.jpg") 
+            div.cardcontent 
+                p Genre: Action,Adventure,
+                p Thriller,
+                p Supernatual,
+                p Body Horror 
+        div.card
+          h3 Full Metal Alchemist
+          div.cardbox 
+            div.cardimg
+                img(src="/static/FMBA.jpeg")    
+            div.cardcontent 
+                p Genre: Action,Thriller,
+                p Supernatual, Suspense
+
+        div.card
+          h3 Monster
+          div.cardbox 
+            div.cardimg
+                img(src="/static/Monster.jpg")  
+            div.cardcontent 
+                p Genre: Action,Psychological Thriller,
+                p Supernatual   
+    section#sponsorSection 
+        h3 Honourable Mentions
+        #sponsors
+            img(src='/static/logo.jpeg',alt="Sponsor Image", class="spImage")
+            img(src='/static/logo.jpeg',alt="Sponsor Image", class="spImage")
+            img(src='/static/logo.jpeg',alt="Sponsor Image", class="spImage")
+            img(src='/static/logo.jpeg',alt="Sponsor Image", class="spImage")
+            img(src='/static/logo.jpeg',alt="Sponsor Image", class="spImage")   

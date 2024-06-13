@@ -1,0 +1,25 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+        include ../static/styleContact.css
+
+block content 
+    container
+      h1 Contact Us
+      form(action='/submit-form' method='POST')
+        .form-group
+          label(for='name') Name
+          input(type='text' id='name' name='name' required)
+        .form-group
+          label(for='email') Email
+          input(type='email' id='email' name='email' required)
+        .form-group
+          label(for='message') Message
+          textarea(id='message' name='message' required)
+        .form-group
+          button(type='submit') Submit

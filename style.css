@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+#navbar{
+    background-color: black;
+    padding: 14px 14px;
+    font-family:'Poetsen One';
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center;*/
+    align-items: center;
+
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    color: red;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 13px 20px;
+}
+#navbar li a:hover{
+    color: aqua;
+    text-decoration: none;
+    padding: 13px 30px;
+    font-weight: bold;
+}
+#introSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    font-family: "Roboto Mono", monospace;
+    font-size: 35px;
+    height: 500px;
+    background-color: red;
+    background: center / cover no-repeat url(/static/backg.jpeg);
+}
+#introSection div.small{
+    font-size: 20px;
+    padding:5px;
+}
+#sponsorSection{
+    height: 225px;
+    background-color: rgb(192, 153, 136);
+}
+#sponsorSection h3{
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    padding-top: 12px;
+}
+#sponsors{
+    height: 191px;
+    max-width:1000px;
+    margin: auto;
+    align-items: center;
+}
+.spImage{
+    display: inline;
+    height: 80%;
+    margin: 20px;
+    border-radius: 34px;
+}
+#missionSection{
+    height: 325px;
+    margin:auto;
+    
+}
+#missionSection h3{
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    margin-top: 12px;
+}
+#missionSection div.card{
+    display:inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30%;
+    margin: 23px 17px;
+    height: 225px;
+    background-color: beige;
+
+}
+#footer{
+    color: aliceblue;
+    background-color: black;
+    height: 60px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:20px;
+    font-family:'Poetsen One';
+}
+#logo{
+    display:flex;
+    align-items: center;
+    padding-bottom: 0%;
+}
+#logo img{
+    height: 60px;
+    filter: invert(100);
+}
+.cardbox{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cardimg{
+    height:150px;
+    padding: 0px 14px;
+    filter:invert(0);
+    
+}
+.cardimg img{
+    height:inherit;
+    border-radius: 12px;
+}
+.cardcontent{
+    padding:10px
+}
+.cardcontent p{
+    font-size: 13px;
+    font-family: "Roboto Mono", monospace;
+}
